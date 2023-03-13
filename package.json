@@ -1,0 +1,53 @@
+{
+  "name": "apollo-example",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "codegen": "graphql-codegen"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.7.10",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@fontsource/roboto": "^4.5.8",
+    "@fontsource/roboto-mono": "^4.5.10",
+    "@graphql-tools/schema": "^9.0.16",
+    "@graphql-typed-document-node/core": "^3.1.1",
+    "@mui/icons-material": "^5.11.0",
+    "@mui/material": "^5.11.8",
+    "apollo3-cache-persist": "^0.14.1",
+    "graphql": "^16.6.0",
+    "graphql-tools": "^8.3.18",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@graphql-cli/codegen": "^3.0.0",
+    "@graphql-cli/init": "^4.1.0",
+    "@graphql-codegen/cli": "^3.0.0",
+    "@graphql-codegen/client-preset": "^2.0.0",
+    "@graphql-codegen/typescript": "^3.0.0",
+    "@graphql-codegen/typescript-resolvers": "^3.0.0",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "@typescript-eslint/parser": "^5.51.0",
+    "@vitejs/plugin-react": "^3.1.0",
+    "@yarnpkg/sdks": "^3.0.0-rc.39",
+    "eslint": "^8.33.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "graphql-cli": "^4.1.0",
+    "graphql-config": "^4.4.1",
+    "prettier": "^2.8.4",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.5.0",
+    "typescript": "^4.9.3",
+    "vite": "^4.1.0"
+  },
+  "packageManager": "yarn@3.4.1"
+}

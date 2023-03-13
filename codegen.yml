@@ -1,0 +1,31 @@
+schema:
+  src/gql/schema:
+    require: ts-node/register
+
+documents:
+  - src/components/**/*.ts
+  - src/components/**/*.tsx
+
+ignoreNoDocuments: true
+
+generates:
+  src/gql/generated/server.ts:
+    plugins:
+      - typescript:
+          scalars:
+            ID: number
+            String: string
+            Boolean: boolean
+            Int: number
+            Float: number
+
+      - typescript-resolvers
+  src/gql/generated/client/:
+    preset: client
+    config:
+      scalars:
+        ID: number
+        String: string
+        Boolean: boolean
+        Int: number
+        Float: number
