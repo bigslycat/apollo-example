@@ -54,15 +54,16 @@ export const TodoListItem = memo<TodoListItem.Props>(({ id, name, done }) => {
           <IconButton
             edge='end'
             onClick={toggleRenamingForm}
-            disabled={renaming}
+            disabled={renaming || id < 0}
           >
             <CancelIcon />
           </IconButton>
         ) : (
-          mouseOver && (
+          mouseOver &&
+          id > 0 && (
             <IconButton
               edge='end'
-              disabled={changing && !optimistic}
+              disabled={(changing && !optimistic) || id < 0}
               onClick={deleteTodo}
             >
               <DeleteForeverIcon />
@@ -106,11 +107,11 @@ export const TodoListItem = memo<TodoListItem.Props>(({ id, name, done }) => {
         <ListItemButton
           disableRipple
           onClick={toggleRenamingForm}
-          disabled={pending && !optimistic}
+          disabled={(pending && !optimistic) || id < 0}
         >
           <TodoCheckbox
             checked={done}
-            disabled={(pending && !optimistic) || showRenamingForm}
+            disabled={(pending && !optimistic) || showRenamingForm || id < 1}
             pending={pending && !optimistic}
             onToggle={toggle}
           />

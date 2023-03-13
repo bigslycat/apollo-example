@@ -20,18 +20,3 @@ export function useTodos(): QueryResult<GetTodosQuery, GetTodosQueryVariables> {
 
   return useQuery(GetTodos)
 }
-
-export function TodoList() {
-  const { data, error, loading } = useQuery(GetTodos)
-
-  return (
-    <ol>
-      {data?.todos.map(todo => (
-        <li key={todo.id}>
-          <input type='checkbox' checked={todo.done} />
-          {todo.name}
-        </li>
-      ))}
-    </ol>
-  )
-}
