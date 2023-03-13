@@ -26,8 +26,6 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@graphql-cli/codegen": "^3.0.0",
-    "@graphql-cli/init": "^4.1.0",
     "@graphql-codegen/cli": "^3.0.0",
     "@graphql-codegen/client-preset": "^2.0.0",
     "@graphql-codegen/typescript": "^3.0.0",
@@ -41,8 +39,6 @@
     "eslint": "^8.33.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "graphql-cli": "^4.1.0",
-    "graphql-config": "^4.4.1",
     "prettier": "^2.8.4",
     "ts-node": "^10.9.1",
     "tslib": "^2.5.0",
